@@ -70,8 +70,8 @@ export default function () {
         <div className="flex justify-between items-center p-3">
           <h3 className="font-jost font-bold text-lg">Visitors</h3>
           <div className="flex gap-1">
-            <button type="button" onClick={() => setStatParams('visitors', 'last-30-days')} className="rounded-md cursor-pointer border border-slate-500 px-4 py-1 text-xs transition-colors hover:bg-slate-200/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-500 disabled:pointer-events-none disabled:opacity-50">Last 30 Days</button>
-            <button type="button" onClick={() => setStatParams('visitors', 'last-7-days')} className="rounded-md cursor-pointer border border-slate-500 px-4 py-1 text-xs transition-colors hover:bg-slate-200/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-500 disabled:pointer-events-none disabled:opacity-50">Last 7 Days</button>
+            <button type="button" onClick={() => setStatParams('visitors', 'last-30-days')} className="rounded-md cursor-pointer border border-slate-500 px-4 py-1 text-xs transition-colors hover:bg-slate-300/90 dark:hover:bg-slate-600/90  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-500 disabled:pointer-events-none disabled:opacity-50">Last 30 Days</button>
+            <button type="button" onClick={() => setStatParams('visitors', 'last-7-days')} className="rounded-md cursor-pointer border border-slate-500 px-4 py-1 text-xs transition-colors hover:bg-slate-300/90 dark:hover:bg-slate-600/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-500 disabled:pointer-events-none disabled:opacity-50">Last 7 Days</button>
           </div>
         </div>
         <div className="h-[300px]">
@@ -96,10 +96,10 @@ export default function () {
                     bottom: 8,
                   }}
                 >
-                  <CartesianGrid strokeDasharray="4 4" className="stroke-slate-300" />
-                  <XAxis dataKey="date" className="stroke-slate-500" />
+                  <CartesianGrid strokeDasharray="4 4" className="stroke-slate-300 dark:stroke-slate-600" />
+                  <XAxis dataKey="date" stroke="oklch(70.4% 0.04 256.788)" />
                   <Legend verticalAlign="top" height={36} />
-                  <Tooltip />
+                  <Tooltip wrapperClassName="text-slate-900" />
                   <Line type="monotone" dataKey="views" name={`Page Views`} stroke="oklch(70.5% 0.213 47.604)" strokeWidth={2} />
                   <Line type="monotone" dataKey="visitor" name={`Visitors`} stroke="oklch(69.6% 0.17 162.48)" strokeWidth={2} />
                 </LineChart>
@@ -113,8 +113,8 @@ export default function () {
         <div className="flex justify-between items-center p-3">
           <h3 className="font-jost font-bold text-lg">Sales</h3>
           <div className="flex gap-1">
-            <button type="button" onClick={() => setStatParams('sales', 'last-30-days')} className="rounded-md cursor-pointer border border-slate-500 px-4 py-1 text-xs transition-colors hover:bg-slate-200/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-500 disabled:pointer-events-none disabled:opacity-50">Last 30 Days</button>
-            <button type="button" onClick={() => setStatParams('sales', 'last-7-days')} className="rounded-md cursor-pointer border border-slate-500 px-4 py-1 text-xs transition-colors hover:bg-slate-200/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-500 disabled:pointer-events-none disabled:opacity-50">Last 7 Days</button>
+            <button type="button" onClick={() => setStatParams('sales', 'last-30-days')} className="rounded-md cursor-pointer border border-slate-500 px-4 py-1 text-xs transition-colors hover:bg-slate-300/90 dark:hover:bg-slate-600/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-500 disabled:pointer-events-none disabled:opacity-50">Last 30 Days</button>
+            <button type="button" onClick={() => setStatParams('sales', 'last-7-days')} className="rounded-md cursor-pointer border border-slate-500 px-4 py-1 text-xs transition-colors hover:bg-slate-300/90 dark:hover:bg-slate-600/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-500 disabled:pointer-events-none disabled:opacity-50">Last 7 Days</button>
           </div>
         </div>
         <div className="h-[300px]">
@@ -136,8 +136,8 @@ export default function () {
                     bottom: 8,
                   }}
                 >
-                  <XAxis dataKey="date" className="stroke-slate-500" />
-                  <Tooltip />
+                  <XAxis dataKey="date" stroke="oklch(70.4% 0.04 256.788)" />
+                  <Tooltip wrapperClassName="text-slate-900" />
                   <Legend verticalAlign="top" height={36} />
                   <Bar dataKey="sales" name="Total Orders" fill="oklch(70.5% 0.213 47.604)" />
                   <Bar dataKey="paid" name="Paid Orders" fill="oklch(69.6% 0.17 162.48)" />

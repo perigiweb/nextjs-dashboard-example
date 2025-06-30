@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${jost.variable}`}>
-      <body className="font-sans bg-slate-200 dark:bg-slate-800">
+      <body className="font-sans bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100">
 		    <header className="px-4 py-3 bg-slate-300 dark:bg-slate-700"><Link className="font-jost font-bold text-lg" href="/">{metadata.title as string}</Link></header>
 		    <main className="w-full px-4 py-6 md:py-8">{children}</main>
         <footer className="border-t border-slate-400 dark:border-slate-600 p-4">
