@@ -66,7 +66,7 @@ export default function () {
 
   return (<>
     <div className="flex flex-col md:flex-row gap-4">
-      <div className="w-1/2 bg-slate-100 dark:bg-slate-700 rounded-lg relative shadow-md">
+      <div className="w-full md:w-1/2 bg-slate-100 dark:bg-slate-700 rounded-lg relative shadow-md">
         <div className="flex justify-between items-center p-3">
           <h3 className="font-jost font-bold text-lg">Visitors</h3>
           <div className="flex gap-1">
@@ -109,7 +109,7 @@ export default function () {
         }
         </div>
       </div>
-      <div className="w-1/2 bg-slate-100 dark:bg-slate-700 rounded-lg relative shadow-md">
+      <div className="w-full md:w-1/2 bg-slate-100 dark:bg-slate-700 rounded-lg relative shadow-md">
         <div className="flex justify-between items-center p-3">
           <h3 className="font-jost font-bold text-lg">Sales</h3>
           <div className="flex gap-1">

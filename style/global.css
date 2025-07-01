@@ -5,3 +5,7 @@
 */
 
 @import "tailwindcss";
+
+@theme {
+  --font-jost: Jost, Arial, Helvetica, san-serif;
+}
